@@ -1,42 +1,19 @@
-// get references
-let menu = document.getElementById("menu");
-let button = document.querySelector("button");
-let screenImage = document.querySelector("img");
-let pokemonInfoDiv = document.getElementById("pokemon_info");
+/* @TODO Get References */
 
-// event handler
-// try updating when button is clicked vs when
-// dropdown value changes with
-// menu.onchange =
-button.onclick = function(event) {
-    // prevent the page from reloading
-    event.preventDefault();
+/* @TODO Event Handler */
 
-    // capture userChoice
-    let userChoice = menu.value;
-    console.log(userChoice);
+/*  
+    try updating when button is clicked vs when
+    dropdown value changes with
+    menu.onchange = 
+*/
 
-    // show Pokemon picture based on userChoice
-    if (userChoice == "pika") {
-        // change src of screenImage
-        screenImage.src = "images/pikachu.png";
+// prevent the page from reloading
 
-        // change innerHTML of pokemonInfoDiv
-        pokemonInfoDiv.innerHTML = "a yellow mouse";
-    }
+// capture userChoice
 
-    else if (userChoice == "bulba") {
-        screenImage.src = "images/bulbasaur.png";
-        pokemonInfoDiv.innerHTML = "a green seed";
-    }
+// show Pokemon picture based on userChoice
 
-    else if (userChoice == "char") {
-        screenImage.src = "images/charmander.png";
-        pokemonInfoDiv.innerHTML = "an orange chameleon";
-    }
+// change src of screenImage
 
-    else if (userChoice == "squir") {
-        screenImage.src = "images/squirtle.png";
-        pokemonInfoDiv.innerHTML = "a blue turtle";
-    }
-}
+// change innerHTML of pokemonInfoDiv
